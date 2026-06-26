@@ -6,12 +6,34 @@ A React component library built from the [Simple-DS Figma library](https://www.f
 
 ---
 
-## Quick start
+## Install in your project
+
+```bash
+npm install github:rudolff/DS001
+```
+
+Then import components and styles:
+
+```tsx
+import { Button, Input, Tag } from '@simple-ds/ui'
+import '@simple-ds/ui/dist/ui.css'        // component styles (required)
+import '@simple-ds/ui/tokens/colors.css'   // optional: raw CSS token variables
+```
+
+Pin to a specific version using a tag:
+
+```bash
+npm install github:rudolff/DS001#v1.0.0
+```
+
+---
+
+## Contributing / local development
 
 ```bash
 npm install
 npm run storybook       # component docs at http://localhost:6006
-npm run dev             # app dev server
+npm run dev             # Vite dev server
 ```
 
 ---
