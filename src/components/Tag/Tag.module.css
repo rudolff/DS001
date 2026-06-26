@@ -1,0 +1,26 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 var(--sds-size-space-300);
+  border-radius: var(--sds-size-radius-full);
+  font-family: var(--sds-typography-body-font-family);
+  font-size: 13px;
+  font-weight: var(--sds-typography-body-font-weight-strong);
+  line-height: 1;
+  border: var(--sds-size-stroke-border) solid transparent;
+  cursor: default;
+}
+
+/* Scheme × Variant color combinations */
+.brand.primary   { background: #1e1e1e; color: #fff; }
+.brand.secondary { background: transparent; color: #1e1e1e; border-color: #1e1e1e; }
+
+.danger.primary   { background: #dc2626; color: #fff; }
+.danger.secondary { background: transparent; color: #dc2626; border-color: #dc2626; }
+
+.positive.primary   { background: #16a34a; color: #fff; }
+.positive.secondary { background: transparent; color: #16a34a; border-color: #16a34a; }
+
+.warning.primary   { background: #ca8a04; color: #fff; }
+.warning.secondary { background: transparent; color: #ca8a04; border-color: #ca8a04; }

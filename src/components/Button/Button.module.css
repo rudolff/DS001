@@ -1,0 +1,76 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sds-size-space-200);
+  border: var(--sds-size-stroke-border) solid transparent;
+  border-radius: var(--sds-size-radius-200);
+  font-family: var(--sds-typography-body-font-family);
+  font-weight: var(--sds-typography-body-font-weight-strong);
+  line-height: 1;
+  cursor: pointer;
+  transition: opacity 0.15s, background-color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Variants */
+.primary {
+  background-color: var(--sds-color-text-default-default);
+  color: var(--sds-color-background-default-default);
+}
+
+.primary:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.neutral {
+  background-color: transparent;
+  color: var(--sds-color-text-default-default);
+  border-color: var(--sds-color-border-default-default);
+}
+
+.neutral:hover:not(:disabled) {
+  border-color: var(--sds-color-text-default-default);
+}
+
+.subtle {
+  background-color: transparent;
+  color: var(--sds-color-text-default-default);
+}
+
+.subtle:hover:not(:disabled) {
+  background-color: var(--sds-color-border-default-default);
+}
+
+.danger {
+  background-color: var(--sds-color-background-danger-default);
+  color: var(--sds-color-text-danger-on-danger);
+  border-color: var(--sds-color-border-danger-secondary);
+}
+
+.danger:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+/* Sizes */
+.medium {
+  height: 40px;
+  padding: 0 var(--sds-size-space-600);
+  font-size: var(--sds-typography-body-size-medium);
+}
+
+.small {
+  height: 32px;
+  padding: 0 var(--sds-size-space-300);
+  font-size: 13px;
+}

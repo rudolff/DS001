@@ -1,0 +1,28 @@
+/* Simple-DS typography tokens — extracted from Figma via MCP */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  /* Font families */
+  --sds-typography-heading-font-family: 'Inter', system-ui, sans-serif;
+  --sds-typography-subheading-font-family: 'Inter', system-ui, sans-serif;
+  --sds-typography-body-font-family: 'Inter', system-ui, sans-serif;
+
+  /* Font weights */
+  --sds-typography-heading-font-weight: 600;
+  --sds-typography-subheading-font-weight: 400;
+  --sds-typography-body-font-weight-strong: 600;
+  --sds-typography-body-font-weight-regular: 400;
+
+  /* Font sizes */
+  --sds-typography-heading-size-base: 24px;
+  --sds-typography-subheading-size-medium: 20px;
+  --sds-typography-body-size-medium: 16px;
+
+  /* Line heights */
+  --sds-typography-heading-line-height: 1.2;
+  --sds-typography-body-line-height: 1.4;
+
+  /* Letter spacing */
+  --sds-typography-heading-letter-spacing: -0.02em;
+  --sds-typography-body-size-small: 14px;
+}

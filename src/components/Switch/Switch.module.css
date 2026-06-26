@@ -1,0 +1,64 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--sds-size-space-200);
+  height: 46px;
+}
+
+.track {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 36px;
+  height: 20px;
+  border-radius: var(--sds-size-radius-full);
+  background-color: var(--sds-color-border-default-default);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease;
+  outline: none;
+}
+
+.track:focus-visible {
+  box-shadow: 0 0 0 2px var(--sds-color-background-default-default), 0 0 0 4px var(--sds-color-text-default-default);
+}
+
+.trackChecked {
+  background-color: var(--sds-color-text-default-default);
+}
+
+.trackDisabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.thumb {
+  position: absolute;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: var(--sds-size-radius-full);
+  background-color: var(--sds-color-background-default-default);
+  transition: left 0.2s ease;
+  pointer-events: none;
+}
+
+.thumbChecked {
+  left: 18px;
+}
+
+.label {
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-medium);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  color: var(--sds-color-text-default-default);
+  cursor: pointer;
+  user-select: none;
+}
+
+.labelDisabled {
+  color: var(--sds-color-text-default-tertiary);
+  cursor: not-allowed;
+}

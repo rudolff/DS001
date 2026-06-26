@@ -1,0 +1,60 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.dialog {
+  background: var(--sds-color-background-default-default);
+  padding: var(--sds-size-space-1200);
+  font-family: var(--sds-typography-body-font-family);
+  color: var(--sds-color-text-default-default);
+  border: var(--sds-size-stroke-border) solid var(--sds-color-border-default-default);
+  box-sizing: border-box;
+}
+
+.card {
+  border-radius: var(--sds-size-radius-200);
+  max-width: 560px;
+  width: 100%;
+  margin: var(--sds-size-space-600);
+}
+
+.sheet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: var(--sds-size-radius-200) var(--sds-size-radius-200) 0 0;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.title {
+  font-family: var(--sds-typography-heading-font-family);
+  font-weight: var(--sds-typography-heading-font-weight);
+  font-size: var(--sds-typography-heading-size-base);
+  line-height: var(--sds-typography-heading-line-height);
+  letter-spacing: var(--sds-typography-heading-letter-spacing);
+  color: var(--sds-color-text-default-default);
+  margin: 0 0 var(--sds-size-space-600) 0;
+}
+
+.body {
+  font-size: var(--sds-typography-body-size-medium);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  color: var(--sds-color-text-default-secondary);
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  gap: var(--sds-size-space-300);
+  justify-content: flex-end;
+  margin-top: var(--sds-size-space-600);
+}

@@ -1,0 +1,92 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sds-size-space-200);
+  padding: var(--sds-size-space-200) var(--sds-size-space-300);
+  background: transparent;
+  border: none;
+  border-radius: var(--sds-size-radius-200);
+  cursor: pointer;
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-medium);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  color: var(--sds-color-text-default-secondary);
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+  position: relative;
+}
+
+.root:hover:not(:disabled) {
+  background: var(--sds-color-border-default-default);
+  color: var(--sds-color-text-default-default);
+}
+
+.root:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+/* Active state */
+.root.active {
+  color: var(--sds-color-text-default-default);
+  font-weight: var(--sds-typography-body-font-weight-strong);
+}
+
+/* Row direction */
+.row {
+  flex-direction: row;
+  height: var(--sds-size-icon-large);
+}
+
+/* Column direction */
+.column {
+  flex-direction: column;
+  justify-content: center;
+  height: var(--sds-size-space-1600);
+  padding: var(--sds-size-space-200) var(--sds-size-space-300);
+  gap: var(--sds-size-space-050);
+}
+
+/* Size variants */
+.small .label {
+  font-size: 14px;
+}
+
+.medium .label {
+  font-size: var(--sds-typography-body-size-medium);
+}
+
+/* Icon */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Label */
+.label {
+  white-space: nowrap;
+}
+
+/* Active indicator for column layout */
+.indicator {
+  display: block;
+  width: var(--sds-size-space-600);
+  height: var(--sds-size-space-050);
+  background: var(--sds-color-text-default-default);
+  border-radius: var(--sds-size-radius-full);
+  margin-top: var(--sds-size-space-050);
+}
+
+/* Active indicator for row layout using bottom border */
+.row.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: var(--sds-size-space-300);
+  right: var(--sds-size-space-300);
+  height: var(--sds-size-stroke-border);
+  background: var(--sds-color-text-default-default);
+  border-radius: var(--sds-size-radius-full);
+}

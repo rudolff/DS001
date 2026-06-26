@@ -1,0 +1,60 @@
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--sds-size-radius-200);
+  padding: 0;
+  background: transparent;
+  transition: opacity 0.15s ease;
+  font-family: var(--sds-typography-body-font-family);
+}
+
+.iconButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.size-medium {
+  width: 44px;
+  height: 44px;
+}
+
+.size-small {
+  width: 36px;
+  height: 36px;
+}
+
+/* Variants */
+.variant-primary {
+  background-color: var(--sds-color-text-default-default);
+  color: #ffffff;
+  border: none;
+}
+
+.variant-primary:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.variant-neutral {
+  background-color: transparent;
+  color: var(--sds-color-text-default-default);
+  border: var(--sds-size-stroke-border) solid var(--sds-color-border-default-default);
+}
+
+.variant-neutral:hover:not(:disabled) {
+  background-color: var(--sds-color-background-default-default);
+  opacity: 0.85;
+}
+
+.variant-subtle {
+  background-color: transparent;
+  color: var(--sds-color-text-default-default);
+  border: none;
+}
+
+.variant-subtle:hover:not(:disabled) {
+  opacity: 0.7;
+}

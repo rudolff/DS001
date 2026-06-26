@@ -1,0 +1,103 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sds-size-space-300);
+  width: 100%;
+}
+
+.wrapperDisabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.labelRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.label {
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-medium);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  color: var(--sds-color-text-default-default);
+  line-height: 1.4;
+}
+
+.valueDisplay {
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-small);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  color: var(--sds-color-text-default-default);
+  white-space: nowrap;
+}
+
+.trackWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 16px;
+  width: 100%;
+}
+
+.track {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background-color: var(--sds-color-background-brand-secondary);
+  border-radius: var(--sds-size-radius-full);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.fill {
+  height: 100%;
+  background-color: var(--sds-color-background-brand-default);
+  border-radius: var(--sds-size-radius-full);
+}
+
+.range {
+  position: relative;
+  width: 100%;
+  height: 16px;
+  margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: var(--sds-size-radius-full);
+  background-color: var(--sds-color-background-brand-default);
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.range::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+.range::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: var(--sds-size-radius-full);
+  background-color: var(--sds-color-background-brand-default);
+  cursor: pointer;
+}
+
+.description {
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-medium);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  color: var(--sds-color-text-default-secondary);
+  line-height: 1.4;
+  margin: 0;
+}

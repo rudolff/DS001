@@ -1,0 +1,75 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sds-size-space-200);
+  min-height: 44px;
+  cursor: pointer;
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-medium);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  color: var(--sds-color-text-default-default);
+  user-select: none;
+}
+
+.wrapper.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border: var(--sds-size-stroke-border) solid var(--sds-color-border-default-default);
+  border-radius: var(--sds-size-space-050);
+  background-color: var(--sds-color-background-default-default);
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+  box-sizing: border-box;
+}
+
+.box.checked {
+  background-color: var(--sds-color-text-default-default);
+  border-color: var(--sds-color-text-default-default);
+}
+
+.box.indeterminate {
+  background-color: var(--sds-color-text-default-default);
+  border-color: var(--sds-color-text-default-default);
+}
+
+.checkmark {
+  width: 12px;
+  height: 10px;
+}
+
+.dash {
+  display: block;
+  width: 10px;
+  height: 2px;
+  background-color: white;
+  border-radius: 1px;
+}
+
+.label {
+  color: var(--sds-color-text-default-default);
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-medium);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  line-height: 1.5;
+}

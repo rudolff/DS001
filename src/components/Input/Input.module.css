@@ -1,0 +1,70 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sds-size-space-200);
+  width: 100%;
+}
+
+.label {
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-medium);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  color: var(--sds-color-text-default-default);
+  line-height: 1.4;
+}
+
+.description {
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-medium);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  color: var(--sds-color-text-default-secondary);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.input {
+  width: 100%;
+  padding: var(--sds-size-space-300) var(--sds-size-space-400);
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-medium);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  color: var(--sds-color-text-default-default);
+  background-color: var(--sds-color-background-default-default);
+  border: var(--sds-size-stroke-border) solid var(--sds-color-border-default-default);
+  border-radius: var(--sds-size-radius-200);
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease;
+  line-height: 1;
+}
+
+.input::placeholder {
+  color: var(--sds-color-text-default-tertiary);
+}
+
+.input:focus {
+  border-color: var(--sds-color-text-default-default);
+}
+
+.inputError {
+  border-color: var(--sds-color-border-danger-default);
+}
+
+.inputError:focus {
+  border-color: var(--sds-color-border-danger-default);
+}
+
+.inputDisabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.errorText {
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-small);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  color: var(--sds-color-text-danger-default);
+  line-height: 1.4;
+  margin: 0;
+}

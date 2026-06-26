@@ -1,0 +1,76 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: var(--sds-size-space-200);
+  font-family: var(--sds-typography-body-font-family);
+}
+
+.navButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sds-size-space-200);
+  height: 32px;
+  padding: 0 var(--sds-size-space-300);
+  background: transparent;
+  border: var(--sds-size-stroke-border) solid var(--sds-color-border-default-default);
+  border-radius: var(--sds-size-radius-200);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  color: var(--sds-color-text-default-default);
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.navButton:hover:not(:disabled) {
+  border-color: var(--sds-color-text-default-default);
+}
+
+.navButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  gap: var(--sds-size-space-050);
+}
+
+.pageButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  border-radius: var(--sds-size-radius-200);
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--sds-color-text-default-default);
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.pageButton:hover:not(.current) {
+  background-color: var(--sds-color-border-default-default);
+}
+
+.pageButton.current {
+  background-color: var(--sds-color-text-default-default);
+  color: var(--sds-color-background-default-default);
+  font-weight: var(--sds-typography-body-font-weight-strong);
+  cursor: default;
+}
+
+.gap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  color: var(--sds-color-text-default-secondary);
+  user-select: none;
+}

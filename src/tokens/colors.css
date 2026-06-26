@@ -1,0 +1,25 @@
+/* Simple-DS color tokens — extracted from Figma via MCP */
+:root {
+  /* Text */
+  --sds-color-text-default-default: #1e1e1e;
+  --sds-color-text-default-secondary: #757575;
+  --sds-color-text-default-tertiary: #b3b3b3;
+
+  /* Backgrounds */
+  --sds-color-background-default-default: #ffffff;
+
+  /* Borders */
+  --sds-color-border-default-default: #d9d9d9;
+
+  /* Danger */
+  --sds-color-background-danger-default: #ec221f;
+  --sds-color-border-danger-secondary: #c00f0c;
+  --sds-color-border-danger-default: #ec221f;
+  --sds-color-text-danger-on-danger: #fee9e7;
+  --sds-color-text-danger-default: #ec221f;
+
+  /* Brand */
+  --sds-color-background-brand-secondary: #e6e6e6;
+  --sds-color-background-brand-tertiary: #f5f5f5;
+  --sds-color-background-brand-default: #1e1e1e;
+}

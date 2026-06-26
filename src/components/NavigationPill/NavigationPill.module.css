@@ -1,0 +1,26 @@
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sds-size-space-200);
+  border: none;
+  border-radius: var(--sds-size-radius-200);
+  background: transparent;
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-medium);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  color: var(--sds-color-text-default-default);
+  cursor: pointer;
+  white-space: nowrap;
+  line-height: 1;
+  transition: background-color 0.15s;
+}
+
+.pill:hover:not(.active) {
+  background-color: var(--sds-color-background-brand-secondary);
+}
+
+.active {
+  background-color: var(--sds-color-background-brand-tertiary);
+  color: var(--sds-color-text-default-default);
+}

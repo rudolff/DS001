@@ -1,0 +1,61 @@
+.card {
+  display: flex;
+  border-radius: var(--sds-size-radius-200);
+  overflow: hidden;
+  background-color: var(--sds-color-background-default-default);
+}
+
+/* Variants */
+.default { box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+.stroke  { border: var(--sds-size-stroke-border) solid var(--sds-color-border-default-default); }
+
+/* Directions */
+.vertical   { flex-direction: column; }
+.horizontal { flex-direction: row; align-items: center; }
+
+.asset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sds-size-space-600);
+  color: var(--sds-color-text-default-default);
+  flex-shrink: 0;
+}
+
+.image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.horizontal .image {
+  width: 120px;
+  height: 100%;
+}
+
+.content {
+  padding: var(--sds-size-space-600);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sds-size-space-200);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--sds-typography-heading-font-family);
+  font-size: var(--sds-typography-subheading-size-medium);
+  font-weight: var(--sds-typography-heading-font-weight);
+  color: var(--sds-color-text-default-default);
+  letter-spacing: var(--sds-typography-heading-letter-spacing);
+  line-height: var(--sds-typography-heading-line-height);
+}
+
+.description {
+  margin: 0;
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-medium);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  color: var(--sds-color-text-default-secondary);
+  line-height: var(--sds-typography-body-line-height);
+}

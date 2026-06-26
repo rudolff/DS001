@@ -1,0 +1,24 @@
+/* Simple-DS spacing & sizing tokens — extracted from Figma via MCP */
+:root {
+  /* Spacing */
+  --sds-size-space-050: 2px;
+  --sds-size-space-200: 8px;
+  --sds-size-space-300: 12px;
+  --sds-size-space-400: 16px;
+  --sds-size-space-600: 24px;
+  --sds-size-space-1200: 48px;
+  --sds-size-space-1600: 64px;
+
+  /* Sizing */
+  --sds-size-icon-large: 40px;
+
+  /* Border radius */
+  --sds-size-radius-200: 8px;
+  --sds-size-radius-full: 9999px;
+
+  /* Borders */
+  --sds-size-stroke-border: 1px;
+
+  /* Layout */
+  --sds-responsive-device-width: 1200px;
+}

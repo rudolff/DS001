@@ -1,0 +1,54 @@
+.notification {
+  width: 300px;
+  padding: 20px;
+  border-radius: var(--sds-size-radius-200);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+}
+
+.notification.message {
+  background-color: var(--sds-color-background-default-default);
+  border: var(--sds-size-stroke-border) solid var(--sds-color-border-default-default);
+}
+
+.notification.alert {
+  background-color: #fffbeb;
+  border: 1px solid #fbbf24;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: var(--sds-typography-body-font-weight-strong);
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-medium);
+  color: var(--sds-color-text-default-default);
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--sds-color-text-default-secondary);
+  padding: 0;
+  line-height: 1;
+  margin-left: auto;
+}
+
+.closeButton:hover {
+  color: var(--sds-color-text-default-default);
+}
+
+.messageText {
+  color: var(--sds-color-text-default-secondary);
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-medium);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+}
