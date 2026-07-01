@@ -5,7 +5,7 @@
 React 19 + TypeScript design system built from the [Simple-DS Figma library](https://www.figma.com/design/osjbFR32m0tSBqUeRabMD8/Simple-DS).
 
 - **Figma file key**: `osjbFR32m0tSBqUeRabMD8`
-- **Figma Dev Mode MCP server**: `http://127.0.0.1:3845/mcp` (must be enabled in Figma desktop)
+- **Figma MCP server**: remote, `https://mcp.figma.com/mcp` (OAuth-authorized via `/mcp`; no Figma desktop required)
 - **Token prefix**: `--sds-*` (CSS custom properties, never hardcode values)
 - **Package name**: `@simple-ds/ui`
 

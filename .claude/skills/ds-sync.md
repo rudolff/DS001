@@ -12,12 +12,12 @@ Example: `/ds-sync Button`, `/ds-sync NavigationPill`, `/ds-sync Input`
 
 ## What this does
 
-Reads the current Figma design for one component via the Dev Mode MCP, compares it against the existing implementation, and updates the four component files if anything has changed.
+Reads the current Figma design for one component via the remote Figma MCP server, compares it against the existing implementation, and updates the four component files if anything has changed.
 
 ## Prerequisites
 
-- Figma desktop must be open with the Simple-DS file
-- The Dev Mode MCP server must be running (Figma → Preferences → Enable Dev Mode MCP Server)
+- The `figma` MCP server (`https://mcp.figma.com/mcp`) must be authorized. If tools aren't available, tell the user to run `/mcp` in an interactive Claude Code session and complete the OAuth flow.
+- Figma desktop does NOT need to be open — this is a remote server, not the local Dev Mode server.
 
 ## Steps to follow
 
@@ -27,7 +27,7 @@ Extract `[ComponentName]` from the slash command argument. Look up its Figma nod
 
 ### 2. Fetch the Figma design context
 
-Call `mcp__figma-devmode__get_design_context` with:
+Call `mcp__figma__get_design_context` with:
 - `node_id`: the node ID from the table (format: `XXXX-YYYY`)
 - `file_key`: `osjbFR32m0tSBqUeRabMD8`
 

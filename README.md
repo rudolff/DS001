@@ -149,13 +149,12 @@ Generate a token at Figma → Account Settings → Security → Personal access 
 
 When a Figma component changes:
 
-1. Open the file in Figma desktop (so the local MCP server can read it)
-2. Tell Claude: **"sync the Button component from Figma"**
-3. Claude reads the updated spec via the Dev Mode MCP at `http://127.0.0.1:3845/mcp`
-4. Claude updates `Button.tsx`, `Button.module.css`, `Button.stories.tsx`, and `Button.figma.tsx`
-5. Republish: `FIGMA_ACCESS_TOKEN=your_token npm run figma:publish`
+1. Tell Claude: **"sync the Button component from Figma"**
+2. Claude reads the updated spec via the remote Figma MCP server (`https://mcp.figma.com/mcp`)
+3. Claude updates `Button.tsx`, `Button.module.css`, `Button.stories.tsx`, and `Button.figma.tsx`
+4. Republish: `FIGMA_ACCESS_TOKEN=your_token npm run figma:publish`
 
-The Figma Dev Mode MCP server must be running — enable it in Figma desktop under Preferences → Enable Dev Mode MCP Server.
+The remote Figma MCP server requires a one-time OAuth authorization (`/mcp` in an interactive Claude Code session) — no need for Figma desktop to be running.
 
 ---
 
